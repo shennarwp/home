@@ -186,7 +186,7 @@ label, legend, fieldset {
 main {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 95vh;
   justify-content: center;
   padding: 0 30px;
   text-align: center;
