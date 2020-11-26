@@ -9,8 +9,8 @@ jobs:
       - name: check html and css
         uses: Cyb3r-Jak3/html5validator-action@v0.4.3
           with:
-          root: .
-          css: true
+            root: .
+            css: true
       - name: upload log file
         uses: actions/upload-artifact@v2
           with:
