@@ -1,0 +1,18 @@
+name: CI
+on: [push]
+jobs:
+  html5validator:
+    runs-on: ubuntu-latest
+    steps:
+      - name: set up git repository
+        uses: actions/checkout@v2
+      - name: check html and css
+        uses: Cyb3r-Jak3/html5validator-action@v0.4.3
+          with:
+          root: .
+          css: true
+      - name: upload log file
+        uses: actions/upload-artifact@v2
+          with:
+            name: log
+            path: log.log
