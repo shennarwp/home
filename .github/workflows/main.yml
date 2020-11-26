@@ -8,11 +8,11 @@ jobs:
         uses: actions/checkout@v2
       - name: check html and css
         uses: Cyb3r-Jak3/html5validator-action@v0.4.3
-          with:
-            root: .
-            css: true
+        with:
+          root: .
+          css: true
       - name: upload log file
         uses: actions/upload-artifact@v2
-          with:
-            name: log
-            path: log.log
+        with:
+          name: log
+          path: log.log
