@@ -13,8 +13,12 @@ body {
   line-height: 1.618;
   max-width: 38em;
   margin: auto;
+  /*
   color: #4a4a4a;
   background-color: #f9f9f9;
+  */
+  color: #fffacd;
+  background-color: #1a1a1a;
   padding: 13px; }
 
 @media (max-width: 684px) {
@@ -64,14 +68,22 @@ small, sub, sup {
 hr {
   border-color: #1d7484; }
 
-a {
+/*a {
   text-decoration: none;
   color: #1d7484; }
   a:hover {
     color: #982c61;
     border-bottom: 2px solid #4a4a4a; }
   a:visited {
-    color: #144f5a; }
+    color: #144f5a; }*/
+a {
+  text-decoration: none;
+  color: #fff599; }
+  a:hover {
+    color: #ffed4d;
+    border-bottom: 2px solid #4a4a4a; }
+  a:visited {
+    color: #ffed4d; }
 
 ul {
   padding-left: 1.4em;
