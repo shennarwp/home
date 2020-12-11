@@ -1,7 +1,7 @@
 version: "3"
 services:
   home:
-    image: nginx:alpine
+    image: nginx:1.19.5-alpine
     container_name: home
     restart: always
     expose:
