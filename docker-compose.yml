@@ -1,13 +1,13 @@
 version: "3"
 services:
   home:
-    image: nginx:1.19.5-alpine
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: home
     restart: always
     expose:
       - 80
-    volumes:
-      - ./:/usr/share/nginx/html/
     networks:
       - nginx
 
