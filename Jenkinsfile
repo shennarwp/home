@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'docker container stop home && docker container rm home'
+                sh 'docker-compose down'
                 sh 'docker-compose up -d'
             }
         }
